@@ -1,0 +1,76 @@
+/* global configs */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Styles */
+
+.container {
+    background-color: #FCFBF4;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 2.5rem;
+}
+
+.icon {
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.icon:hover { transform: scale(1.5); }
+
+h1 { color: #3d3b36; }
+
+.docker-icon { color: #1D63ED; }
+
+.html-icon { color: #E34F26; }
+
+.css-icon { color: #1572B6; }
+
+.nginx-icon { margin-top: 8px;}
+
+hr {
+    border: none; 
+    height: 4px;
+    background: linear-gradient(90deg, #1D63ED ,#009639, #E34F26, #1572B6);
+    background-size: 300%;
+    width: 90%;
+    margin: 0 auto;
+    animation: gradient-animation 5s ease infinite;
+}
+
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%; 
+    }
+    50% {
+        background-position: 100% 50%; 
+    }
+    100% {
+        background-position: 0% 50%; 
+    }
+}
